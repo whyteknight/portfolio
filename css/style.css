@@ -114,20 +114,25 @@ nav a:hover {
     align-items: center;
 }
 
-.chip1, .chip2, .chip3,
+ /* .chip1, .chip2, .chip3,
 .chip4, .chip5, .chip6 {
     display: inline-flex;
     align-items: center;
     justify-content:space-around;
-    padding: 5px;
-}
+    padding: 5px; 
+} */
 
+.info1, .info2 {
+    padding: 10px;
+    gap: 10px;
+
+}
 /* Skills styles */
-.skills {
+/* .skills {
     max-width: 80rem;
     text-align: center;
     margin-top: 50px;
-}
+} */
 
 .skill-title {
     margin-bottom: 1rem;
@@ -135,12 +140,6 @@ nav a:hover {
 
 .wrapper img {
     padding: 1.25rem;
-}
-
-.skill-list1, .skill-list2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .skill-card {
@@ -300,11 +299,6 @@ footer {
   
     .skill-list1, .skill-list2 {
         flex-direction: column;
-    }
-
-    .chip1, .chip2, .chip3, 
-    .chip4, .chip5, .chip6 {
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -334,9 +328,8 @@ footer {
         width: 17.875rem;
     }
 
-    .chip1, .chip2, .chip3,
-    .chip4, .chip5, .chip6 {
-        width: 15.875rem;
+    .info1, .info2 {
+        flex-direction: column;
     }
 
     .skills1-list, .skill2-list {
