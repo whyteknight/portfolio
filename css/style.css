@@ -11,12 +11,13 @@ html {
 
 body {
   font-family: ‘Merriweather’, Georgia, serif;
-  background-color: #5EAAA8;
-  color: black;
+  background-color: rgb(244, 241, 241);
+  color:rgb(57, 57, 57);
   margin-bottom: 0.5rem;
   line-height: 1.7rem;
   transition: 0.3s;
 }
+
 /* Navigation styles */
 nav {
     position: sticky;
@@ -26,16 +27,15 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 3rem;
-    background-color: #D8E9A8;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link {
-    color: #03256C;
+    color: white;
 }
 
 nav h2 {
-    color: #03256C;
+    color: white;
     transition: 0.3s;
 }
 
@@ -50,8 +50,8 @@ nav ul li {
 } 
 
 nav a:hover {
-    color: green;
-    border-bottom: 2px solid green;
+    color: white;
+    border-bottom: 2px solid white;
 }
 
 .small-nav {
@@ -62,6 +62,72 @@ nav a:hover {
     cursor: pointer;
     display: none;
 }
+
+/* Light-Dark styles */
+.dark a {
+    color:rgb(0, 255, 255);
+  }
+  
+.light-dark {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+  }
+  
+  .switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+  }
+  
+  .flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: 
+      inset 4px 4px 4px rgb(255,255,255),
+      inset -4px -4px 4px rgb(195 193 198 / 90%);
+  }
+  
+  .dark {
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s;
+
+    .myname {
+        color: rgb(0, 255, 255);
+    }
+
+    .hero-img, .about-me {
+        box-shadow: 0px 2px 15px 2px rgb(0, 255, 255);
+    }
+
+  }
+  
+  .moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+  }
+  
+  .dark .flicker {
+    transform: translateX(40px);
+  }
+  
+  .dark > * {
+   color:rgb(255, 255, 255);
+  }
+
 /* Hero Styles */
 .hero {
     display: flex;
@@ -76,13 +142,22 @@ nav a:hover {
 .hero-img {
     margin-top: 20px;
     border-radius: 80px;
+    box-shadow: 0px 2px 15px 2px #053742;
+}
+
+.square {
+        background-color:rgb(136, 136, 136);
+}
+  
+.dark .square {
+    background-color: rgb(71, 71, 71);
 }
   
 .about-me {
     width: 25rem;
     padding: 0.625rem;
     border-radius: 6px;
-    background-color: #D8E9A8;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 15px 2px #053742;
 }
   
@@ -157,6 +232,7 @@ nav a:hover {
     transition: all .4s ease; /* zoom in */
     cursor: pointer;
 }
+
 /* Project styles */
 .projects {
     padding: 32px 0;
@@ -166,14 +242,14 @@ nav a:hover {
 .container-projects {
     color: black;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content:space-around;
 }
 
 .project-container {
     text-align: center;
     width: 21.875rem;
-    padding: 1rem;     
+    padding: 1rem;      
 }
 
 .project-container > p {
@@ -195,11 +271,12 @@ nav a:hover {
 .project-card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 3px 10px #8b8eaf;
+    box-shadow: 0 3px 10px #053742, 8px 14px 38px rgba(39,44,49,.06);
     padding: 20px;
     margin: 10px; 
-    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);   
+    /* box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03); */
 }
+
 /* Contact styles */
 .contact {
     max-width: 80rem;
@@ -230,6 +307,7 @@ nav a:hover {
     width: 3rem;
     height: 3rem;
 }
+
 /* Footer style */
 footer {
     padding: 1.25rem;
@@ -305,6 +383,7 @@ footer {
   
     .container-projects {
         flex-direction: column;
+        align-items: center;
     }
 
     .project-container {

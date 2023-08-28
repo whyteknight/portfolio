@@ -23,8 +23,8 @@
 
 <body>
     <!-- Navigation Section -->
-    <nav>
-        <h2>Michael Torres</h2>
+    <nav class="square">
+        <h2 class="myname">Michael Torres</h2>
         <ul class="navigation">
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -35,19 +35,28 @@
             <ion-icon class="bars" name="menu-outline"></ion-icon>
         </button>
     </nav>
+    
+    <!-- Light-Dark Section -->
+    <section class="light-dark">
+        <div class="switch">
+            <div class="flicker"></div>
+            <div class="moon"></div>
+        </div>
+    </section>
+
     <!-- Hero Section -->
     <section class="hero" id="about">
         <img src="images/my pic.jpg" alt="Michael Torres" loading="lazy" class="hero-img" />
-        <div class="about-me">
+        <div class="about-me square">
             <h2 class="about-title text-center">About Me</h2>
             <p class="about-text">
                 Hi! My name is Michael Torres. I'm from the city of Las Piñas City, Philippines.
-                I'm currently attending a Bootcamp at Kodego.PH to enhance my skills in Web Development.
+                I'm currently looking for a job that fits my qualifications.
                 I am a team player and learn new things quickly.
             </p><br>
             <!-- Button to download CV -->
             <div class="cv-button">
-                <a class href="https://drive.google.com/file/d/16EvcnlL4Xil3QmONDgYg_kKbMYPQllej/view?usp=sharing"
+                <a class href="https://drive.google.com/file/d/1jvEExqTwtkTZHUPnxCavfPKPGuJ8zm_G/view?usp=sharing"
                     title="cv" download><button type="button" class="btn btn-dark">Download CV</button></a>
             </div>
         </div>
@@ -56,9 +65,9 @@
     <section class="more-info">
         <h2>More Information about Me</h2>
         <p class="text-center">
-            Things that I love to do when I'm not coding
+            Things that I love to do when I'm not working
         <div class="info1 d-flex align-content-center justify-content-center flex-nowrap">
-            <span class="badge rounded-pill bg-light text-dark border border-dark"><img src="images/guitar.png">Playing
+            <span class="badge rounded-pill bg-light text-dark border border-dark square"><img src="images/guitar.png">Playing
                 a Guitar</span>
             <span class="badge rounded-pill bg-light text-dark border border-dark"><img
                     src="images/controller.png">Playing Video Games</span>
@@ -86,7 +95,7 @@
         </div>
         <div class="skill-list2 d-flex align-content-center justify-content-center flex-nowrap">
             <img class="skill-card" src="images/javascript.png" alt="Javascript Logo" loading="lazy">
-            <img class="skill-card" src="images/mysql.png" alt="Mysql Logo" loading="lazy">
+            <img class="skill-card" src="images/photoshop.png" alt="Photoshop Logo" loading="lazy">
             <img class="skill-card" src="images/github.png" alt="Github Logo" loading="lazy">
         </div>
     </section>
@@ -125,6 +134,29 @@
                     <div class="text-center">
                         <a href="https://whyteknight.github.io/calculator/" class="btn btn-success">Link</a>
                     </div>
+                </div>
+            </div>
+         </div>   
+            <div class="container-projects">
+            <div class="project-container project-card">
+                <img class="card-img-top" src="images/book.png" alt="Fantasy Book">
+                <div class="card-body">
+                    <h4 class="card-title">Photo Manipulation</h4>
+                    <p class="card-text">A fantasy-themed photo about a land and sea going outside the book.<br> Used: Adobe Photoshop</p>
+                </div>
+            </div>
+            <div class="project-container project-card">
+                <img class="card-img-top" src="images/tea.png" alt="Tea">
+                <div class="card-body">
+                    <h4 class="card-title">Photo Manipulation</h4>
+                    <p class="card-text">Tea Time Co. offers a captivating tea experience, embracing the essence of nature's tranquility.<br> Used: Adobe Photoshop</p>
+                </div>
+            </div>
+            <div class="project-container project-card">
+                <img class="card-img-top" src="images/real estate logo.png" alt="Sample Logo">
+                <div class="card-body">
+                    <h4 class="card-title">Logo Manipulation</h4>
+                    <p class="card-text">Beacon Homes LLC logo embodies sophistication and aspiration. A minimalistic yet bold house icon stands tall, symbolizing growth and stability.<br> Used: Adobe Photoshop</p>
                 </div>
             </div>
         </div>

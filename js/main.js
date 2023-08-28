@@ -17,7 +17,14 @@ navLink.forEach((link) =>
   link.addEventListener("click", () => {
     ul.classList.remove("show");
   })
-);  
+);
+
+// Light - Dark function
+const switchElement = document.querySelector('.switch')
+
+switchElement.addEventListener('click', () => {
+  document.body.classList.toggle('dark')
+});
 
 // Scroll to top function
 const scrollUp = document.querySelector("#scroll-up");
