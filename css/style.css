@@ -317,7 +317,24 @@ footer {
 /* Media queries in relation to responsiveness */
 @media screen and (max-width: 1280px) {
     .container-projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-projects {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .project-container {
+        width: 20.875rem;
+    }
+
+    .container-icons {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
@@ -328,7 +345,7 @@ footer {
 
     nav ul {
         position: fixed;
-        background-color: #fcfcfc;
+        background-color: rgb(71, 71, 71);
         flex-direction: column;
         top: 86px;
         left: 10%;
