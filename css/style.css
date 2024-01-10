@@ -243,7 +243,7 @@ nav a:hover {
     color: black;
     display: flex;
     align-items: stretch;
-    justify-content:space-around;
+    justify-content:center;
 }
 
 .project-container {
@@ -396,7 +396,7 @@ footer {
     }
   }
   
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 425px) {
    
     .about-me {
         margin-top: 10px;  
