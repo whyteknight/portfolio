@@ -239,13 +239,13 @@ nav a:hover {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    align-items: stretch;
+    justify-content: center;
     /* padding: 0 150px; */
     gap: 4rem;
 }
 
 .project .box-container .box {
-    flex: 1 1 30rem;
+    flex: 1 1 28rem;
     border-radius: .5rem;
     overflow: hidden;
 }
