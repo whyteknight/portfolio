@@ -241,11 +241,11 @@ nav a:hover {
     flex-wrap: wrap;
     align-items: stretch;
     /* padding: 0 150px; */
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .project .box-container .box {
-    flex: 1 1 28rem;
+    flex: 1 1 30rem;
     border-radius: .5rem;
     overflow: hidden;
 }
